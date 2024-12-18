@@ -1101,6 +1101,140 @@ This approach ensures that the analysis is comprehensive, actionable, and aligne
 \end{itemize}
 
 
+\newpage
+
+%--------------------------------------- Requirements Validations %--------------------------------
+
+
+\section{Requirements Validation}
+
+\begin{longtable}{|p{4cm}|p{3cm}|p{2cm}|p{8cm}|}
+\caption{Requirements Validation Table}
+\TableLabel{requirements_validation}
+\\
+    \hline
+    \textbf{User Requirement} & \textbf{Priority} & \textbf{Use Case} & \textbf{Validation Method} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFInsightsDisplay} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseViewingInsightsRecommendations} \vspace{0.5cm} & \vspace{0.5cm} Inspection: Review implementation to ensure all required insights and recommendations are present. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkQuality}{reqQInsightsAccuracy} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseViewingInsightsRecommendations} \vspace{0.5cm} & \vspace{0.5cm} Testing: Create test cases comparing system-generated insights against expected results. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkPerformance}{reqPInsightsSpeed} 
+    &\vspace{0.5cm} \gls{should}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseViewingInsightsRecommendations} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Measure feature response times under various test conditions. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkSecurity}{reqSDataEncryption} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseViewingInsightsRecommendations} \vspace{0.5cm} & \vspace{0.5cm} Demonstration: Verify encryption protocols through controlled security audits. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkBusiness}{reqBInsightsEngagement} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseViewingInsightsRecommendations} \vspace{0.5cm} & \vspace{0.5cm} Testing: Monitor and analyze user engagement metrics post-deployment. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFReceiptScanning} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseReceiptScanning} \vspace{0.5cm} & \vspace{0.5cm} Testing: Validate functionality using various receipt formats and edge cases. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkBusiness}{reqBReceiptScanningAdoption} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseReceiptScanning} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Track retention metrics after implementation. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkQuality}{reqQReceiptAccuracy} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseReceiptScanning} \vspace{0.5cm} & \vspace{0.5cm} Testing: Compare extracted data with actual receipt data. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkPerformance}{reqPReceiptSpeed} 
+    &\vspace{0.5cm} \gls{should}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseReceiptScanning} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Measure average processing time using benchmark tests. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkSecurity}{reqSReceiptDataSecurity} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseReceiptScanning} \vspace{0.5cm} & \vspace{0.5cm} Demonstration: Review encryption mechanisms and conduct penetration tests. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFBankIntegration} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseBankAccountIntegration} \vspace{0.5cm} & \vspace{0.5cm} Testing: Perform end-to-end API integration tests. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkBusiness}{reqBBankIntegrationRetention} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseBankAccountIntegration} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Monitor retention and engagement metrics post-deployment. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkQuality}{reqQBankDataAccuracy} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseBankAccountIntegration} \vspace{0.5cm} & \vspace{0.5cm} Testing: Compare transaction categorizations with predefined outputs. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkPerformance}{reqPBankIntegrationSpeed} 
+    &\vspace{0.5cm} \gls{should}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseBankAccountIntegration} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Measure API request response times. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkSecurity}{reqSBankDataSecurity} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseBankAccountIntegration} \vspace{0.5cm} & \vspace{0.5cm} Demonstration: Conduct penetration testing and compliance reviews. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFTaxDataAggregation} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Testing: Validate aggregated data accuracy against expected tax return inputs. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFTaxRulesApplication} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Review calculation outputs for compliance with jurisdictional rules. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFTaxFilingOptions} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Demonstration: Perform end-to-end tests of e-filing integration. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkBusiness}{reqBTaxFilingConvenience} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Conduct user satisfaction surveys post-deployment. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkQuality}{reqQTaxCalculationAccuracy} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Testing: Validate tax rule applications and calculations using test cases. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkPerformance}{reqPTaxProcessingSpeed} 
+    &\vspace{0.5cm} \gls{should}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Measure processing times under normal and peak loads. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkSecurity}{reqSTaxDataSecurity} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Demonstration: Verify encryption and data security compliance. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkFunctional}{reqFTaxOutdatedRulesHandling} 
+    &\vspace{0.5cm} \gls{must}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Demonstration: Simulate outdated rule scenarios and validate notifications. \vspace{0.5cm} \\
+    \hline
+
+    \RequirementReference{reqkBusiness}{reqBTaxManualAssistance} 
+    &\vspace{0.5cm} \gls{should}\vspace{0.5cm} & \vspace{0.5cm} \UseCaseReference{useCaseTaxFiling} \vspace{0.5cm} & \vspace{0.5cm} Analysis: Compare time taken for manual filing pre- and post-deployment. \vspace{0.5cm} \\
+    \hline
+
+\end{longtable}
+
+\section{Validation Methodology}
+
+For each requirement, we will employ one or more of the following validation methods:
+
+\begin{itemize}
+    \item \textbf{Inspection:} Review the design, implementation, and documentation to ensure compliance with the requirement.
+    \item \textbf{Testing:} Develop and execute test cases to validate that the system meets functional, quality, and performance requirements.
+    \item \textbf{Analysis:} Evaluate metrics and outputs generated by the system against benchmarks or expected results.
+    \item \textbf{Demonstration:} Perform live demonstrations to verify system behavior under controlled scenarios.
+\end{itemize}
+
+\subsection{Example: Testing for \texttt{reqQInsightsAccuracy} \RequirementReference{reqkQuality}{reqQInsightsAccuracy}}
+To validate that 95\% of insights are accurate:
+\begin{enumerate}
+    \item Generate a dataset of test transactions with known financial patterns.
+    \item Input the test dataset into the app.
+    \item Compare the generated insights and recommendations against the expected results.
+    \item Calculate the percentage of accurate insights and ensure it meets or exceeds 95\%.
+\end{enumerate}
+
+
 %-------------------------------------------------------------
 \section{Requirements Management}
 Talk about using JIRA + issue tracking 
